@@ -13,14 +13,19 @@ body {
     max-width: 460px;
     margin: 60px auto;
     box-sizing: border-box;
+    text-align: center;
 }
 
 p, h2 {
     font-size: 16px;
 }
 
-.hlavicka {
-   text-align: center;
+p {
+    color: #8B8B8B;
+}
+
+.ikony p {
+    font-size: 13px;
 }
 
 .hlavicka img {
@@ -72,3 +77,30 @@ h1 {
 }
 
 /* u tlačítka "raději pohodu na pláži" jsem nastavila šířku místo 220 na 221px, protože při 220px se mi text rozděloval na dva řádky */
+
+.sluzby h2 {
+    margin: 60px auto 15px auto;
+}
+
+.sluzby p {
+    margin: 15px auto 30px auto;
+}
+
+.box {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    margin: 15px auto;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    align-items: center;
+    flex: 1 1 100%;
+    width: 460px;
+
+       
+}
+
+.box img {
+    padding: 20px 30px 20px 20px;
+}
+
+
