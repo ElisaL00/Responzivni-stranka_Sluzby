@@ -46,7 +46,7 @@ h1 {
 .podtrzeni {
    width: 60px;
    height: 2px;
-   background-color: #407BFF;;
+   background-color: #407BFF;
    margin: 10px auto;
 }
 
@@ -102,8 +102,6 @@ h1 {
     align-items: center;
     flex: 1 1 100%;
     max-width: 460px;
-
-       
 }
 
 .box img {
@@ -162,7 +160,93 @@ h1 {
     .box p {
         padding: 20px 15px;
     }
+}
 
+/* PC verze */
 
+@media screen and (min-width: 1100px) {
 
+    body {
+        width: 1040px;
+    }
+
+    .hlavicka {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* margin: 60px auto 0 auto; */
+    }
+
+    .hlavicka img {
+        order: 2;
+        width: 425px;
+        margin-right: 32.5px;
+        margin-bottom: 0;
+    }
+
+    /* Nevěděla jsem si rady, jak nastavit mezeru 60px mezi horním textem a obrázkem a dotoho, aby obrázek byl ve svém sloupci vycentrovaný. Podle mého css to ty správné hodnoty ve výsledku asi má, ale řekla bych, že se to nastavuje jinak, tak prosím o připomenutí jak na to v tomto případě, děkuji:) */
+
+    .popis {
+        order: 1;
+        text-align: left;
+        max-width: 490px; 
+    }
+
+    .tlacitka {
+        justify-content: left;
+    }
+
+    .podtrzeni {
+        margin: 10px 0;
+    }
+
+    .cestovka,
+    .delegati {
+        display: flex;
+        margin-top: 80px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sluzby h2 {
+        margin: 0 0 17px 0;
+    }
+
+    .sluzby p {
+        margin: 0;
+    }
+
+    .ikony {
+        justify-content: space-between;
+        width: 550px;
+    }
+
+    .box {
+        width: 170px;
+        height: 192px;
+    }
+
+    .box p {
+        padding-bottom: 40px;
+    }
+
+    .box img {
+        padding: 40px 60px 0 60px;
+    }
+
+    /* text pod ikonkami není v každém boxu stejně rozmístěn jako v grafickém návrhu */
+
+   .sluzby {
+        text-align: left;
+        width: 430px;
+   }
+
+   .prava {
+        order: 2;
+   }
+
+   .leva {
+        order: 1;   
+   }
+}
 
